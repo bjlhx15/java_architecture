@@ -11,6 +11,12 @@
 
     <artifactId>goodsmgrweb</artifactId>
     <packaging>war</packaging>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.github.bjlhx15.architecture</groupId>
+            <artifactId>goodsmgr</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
