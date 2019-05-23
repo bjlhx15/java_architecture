@@ -12,7 +12,7 @@
 </head>
 <body>
 <h2>hello world goodsmgrweb =====</h2>
-<%@page import="com.github.bjlhx15.architecture.goodsmgr" %>
+<%@page import="com.github.bjlhx15.architecture.goodsmgr.Goods1" %>
 
 <%
     System.out.println("now in goods g1.jsp");
