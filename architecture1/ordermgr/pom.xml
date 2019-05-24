@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>architecture1</artifactId>
@@ -9,15 +9,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>customermgr</artifactId>
+    <artifactId>ordermgr</artifactId>
     <packaging>war</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>com.github.bjlhx15.architecture</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+
+    <name>ordermgr Maven Webapp</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <build>
         <plugins>
@@ -32,7 +35,7 @@
                         <port>8081</port>
                     </httpConnector>
                     <webAppConfig>
-                        <contextPath>/customer</contextPath>
+                        <contextPath>/order</contextPath>
                     </webAppConfig>
                 </configuration>
             </plugin>
