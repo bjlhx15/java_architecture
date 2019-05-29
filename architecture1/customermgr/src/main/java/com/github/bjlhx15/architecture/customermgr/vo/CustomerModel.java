@@ -1,23 +1,15 @@
 package com.github.bjlhx15.architecture.customermgr.vo;
 
-import java.util.Objects;
+import com.github.bjlhx15.architecture.common.vo.BaseModel;
 
-public class CustomerModel {
-    private Integer uuid;
+import java.io.Serializable;
+
+public class CustomerModel extends BaseModel implements Serializable  {
     private String customerId;
     private String pwd;
     private String showName;
     private String trueName;
     private String registerTime;
-
-
-    public Integer getUuid() {
-        return uuid;
-    }
-
-    public void setUuid(Integer uuid) {
-        this.uuid = uuid;
-    }
 
     public String getCustomerId() {
         return customerId;
@@ -59,24 +51,12 @@ public class CustomerModel {
         this.registerTime = registerTime;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        CustomerModel that = (CustomerModel) o;
-        return Objects.equals(uuid, that.uuid);
-    }
 
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(uuid);
-    }
 
     @Override
     public String toString() {
         return "CustomerModel{" +
-                "uuid=" + uuid +
+                "uuid=" + this.getUuid() +
                 ", customerId='" + customerId + '\'' +
                 ", pwd='" + pwd + '\'' +
                 ", showName='" + showName + '\'' +
