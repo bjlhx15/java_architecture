@@ -1,0 +1,10 @@
+package $#modulePackge#.vo;
+
+public class $#moduleNameSuperCase#QueryModel extends $#moduleNameSuperCase#Model {
+	$[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.QueryModelProperty]
+	$[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.QueryModelPropertyGetterSetter]
+	
+	public String toString(){
+		return $[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.QueryModelToString];
+	}
+}

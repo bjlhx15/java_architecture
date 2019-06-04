@@ -16,6 +16,7 @@
         <module>cartmgr</module>
         <module>ordermgr</module>
         <module>storemgr</module>
+        <module>arch1xgen</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

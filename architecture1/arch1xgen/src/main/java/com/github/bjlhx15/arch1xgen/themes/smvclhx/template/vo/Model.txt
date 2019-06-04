@@ -1,0 +1,12 @@
+package $#modulePackge#.vo;
+
+import com.github.bjlhx15.architecture.common.vo.BaseModel;
+
+public class $#moduleNameSuperCase#Model extends BaseModel{
+	$[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.VoProperty]
+	$[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.VoPropertyGetterSetter]
+	
+	public String toString(){
+		return $[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.VoToString];
+	}
+}
