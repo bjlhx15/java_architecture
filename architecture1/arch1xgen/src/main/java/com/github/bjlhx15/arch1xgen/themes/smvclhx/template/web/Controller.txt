@@ -1,5 +1,6 @@
 package $#modulePackge#.web;
 
+import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,9 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import $#modulePackge#.service.I$#moduleNameSuperCase#Service;
 import $#modulePackge#.vo.$#moduleNameSuperCase#Model;
 import $#modulePackge#.vo.$#moduleNameSuperCase#QueryModel;
-import com.sishuok.pageutil.Page;
-import com.sishuok.util.format.DateFormatHelper;
-import com.sishuok.util.json.JsonHelper;
+import com.github.bjlhx15.architecture.common.pageutil.Page;
 
 @Controller
 @RequestMapping(value="/$#moduleName#")
@@ -62,7 +61,8 @@ public class $#moduleNameSuperCase#Controller {
 		}else{
 			String s = wm.getQueryJsonStr();
 			s = s.replace("-", "%");
-			qm = ($#moduleNameSuperCase#QueryModel)JsonHelper.str2Object(s, $#moduleNameSuperCase#QueryModel.class);
+            qm = JSON.parseObject(s,$#moduleNameSuperCase#QueryModel.class);
+			//qm = ($#moduleNameSuperCase#QueryModel)JsonHelper.str2Object(s, $#moduleNameSuperCase#QueryModel.class);
 		}
 		
 		qm.getPage().setNowPage(wm.getNowPage());

@@ -12,7 +12,7 @@
 <script type="text/javascript">
 	$().ready(function(){
 		$("#btn_query").click(function(){
-			$[cn.javass.themes.smvcsm.visitors.QueryJspJson]
+			$[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.QueryJspJson]
 			window.location.href = "${pageContext.request.contextPath}/$#moduleName#/toList?queryJsonStr="+json;
 		});		
 	});

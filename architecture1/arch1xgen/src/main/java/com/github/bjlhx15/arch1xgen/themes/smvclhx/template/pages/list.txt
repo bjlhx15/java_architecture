@@ -26,13 +26,13 @@
 			<td colspan=${$#listViewNum#+1} align="center" class="tableLineBg">$#moduleName_CN#列表</td>
 		</tr>
 		<tr>
-			$[cn.javass.themes.smvcsm.visitors.ListJspHeadFields]
+			$[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.ListJspHeadFields]
 			<td>操作</td>
 		</tr>
 			
 		<c:forEach var="m" items="${page.result}">
 		  <tr>
-			$[cn.javass.themes.smvcsm.visitors.ListJspValueFields]
+			$[com.github.bjlhx15.arch1xgen.themes.smvclhx.visitors.ListJspValueFields]
 		   </tr>
 		</c:forEach>
 				

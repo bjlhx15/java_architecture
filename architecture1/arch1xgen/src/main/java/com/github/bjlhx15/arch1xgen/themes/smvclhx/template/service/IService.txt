@@ -1,7 +1,7 @@
 package $#modulePackge#.service;
 
 
-import com.sishuok.architecture1.common.service.IBaseService;
+import com.github.bjlhx15.architecture.common.service.IBaseService;
 
 import $#modulePackge#.vo.$#moduleNameSuperCase#Model;
 import $#modulePackge#.vo.$#moduleNameSuperCase#QueryModel;

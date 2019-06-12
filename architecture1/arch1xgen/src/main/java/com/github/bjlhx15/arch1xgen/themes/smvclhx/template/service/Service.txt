@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sishuok.architecture1.common.service.BaseService;
+import com.github.bjlhx15.architecture.common.service.BaseService;
 
 import $#modulePackge#.dao.$#moduleNameSuperCase#DAO;
 import $#modulePackge#.vo.$#moduleNameSuperCase#Model;
