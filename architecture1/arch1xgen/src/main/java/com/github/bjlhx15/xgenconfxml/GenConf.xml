@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GenConf>
+	<NeedGens>
+		<NeedGen id="GoodsConf" provider="XmlModuleGenConf" themeId="smvclhx">
+			<Params>
+				<Param id="fileName">GoodsGenConf.xml</Param>
+			</Params>
+		</NeedGen>
+
+	</NeedGens>
+	<Themes>
+		<Theme id="smvclhx">com/github/bjlhx15/themes/smvclhx</Theme>
+	</Themes>
+	<Constants>
+		<Constant id="prePackage">com.github.bjlhx15</Constant>
+		<Constant id="projectName">architecture</Constant>
+	</Constants>
+</GenConf>
